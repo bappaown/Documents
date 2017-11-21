@@ -1,0 +1,24 @@
+Create Repositary 'NodejsStarterApp'
+------Upload files on Repositary 'NodejsStarterApp'----------
+git init
+git add .  or  git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/bappaown/NodejsStarterApp.git
+git push -u origin master
+-------------------------------------------------------------
+
+
+
+
+
+
+
+
+----configure user/email----
+git config --global user.email "bappaown@gmail.com"
+git config --global user.name "Bappaditya Mondal"
+----------------------------
+-------unset config----------
+git config --global --unset user.name
+git config --global --unset user.email
+-----------------------------
