@@ -1,0 +1,89 @@
+1. Constructor Injection
+------------------------
+public interface IEmailService
+{
+    void SendMail(string emailAddress, string message)
+}
+
+public class OutlookEmailService: IEmailService
+{
+    public void SendMail(string emailAddress, string message)
+    {
+        //Send an email using outlook
+    }
+}
+
+public class UserLogic
+{
+    private IEmailService _emailService;
+
+    public UserLogic(IEmailSevice emailService)
+    {
+        _emailService = emailService;
+    }
+
+    public void Register(string emailAddress, string password)
+    {
+        _emailService.SendMail(emailAddress, authResult.ConfirmationMessage);
+    }
+}
+
+2. Method Injection
+-------------------
+
+public interface IEmailService
+{
+    void SendMail(string emailAddress, string message)
+}
+
+public class OutlookEmailService: IEmailService
+{
+    public void SendMail(string emailAddress, string message)
+    {
+        //Send an email using outlook
+    }
+}
+
+public class UserLogic
+{
+    private IEmailService _emailService;
+
+    public UserLogic()
+    {
+        _emailService = new OutlookEmailService();
+    }
+
+    public void Register(string emailAddress, string password)
+    {
+        _emailService.SendMail(emailAddress, authResult.ConfirmationMessage);
+    }
+}
+
+==================================================
+1. Constructor Injection
+------------------------
+    public interface text  
+    {  
+        void print();  
+    }  
+    class format : text  
+    {  
+        public void print()  
+        {  
+            Console.WriteLine(" here is text format");     
+        }  
+    }  
+    // constructor injection  
+    public class constructorinjection  
+    {  
+        private text _text;  
+
+        public constructorinjection(text t1)  
+        {  
+            _text = t1;  
+        }  
+        public void output()  
+        {  
+            _text.print();  
+        }
+    }  

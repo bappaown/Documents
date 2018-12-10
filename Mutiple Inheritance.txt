@@ -1,0 +1,6 @@
+Why oops is not supported multiple inheritance.
+
+1. One problem occurs when two parent classes have data members or methods of the same name. It is difficult to resolve which is being referenced by the sub-class.
+2. The Diamond of Dread:
+   We have a class A, then B and C both inherit from A. And someone then decides that D must inherit both from B and C.
+   The parent class A was present twice in its grandchild class D, having something go silently wrong and crash.

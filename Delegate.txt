@@ -1,0 +1,48 @@
+    // Declaration
+    public delegate void SimpleDelegate();
+
+    class TestDelegate
+    {
+        public static void MyFunc()
+        {
+            Console.WriteLine("I was called by delegate.");
+        }
+
+        public static void Main()
+        {
+            // Instantiation
+            SimpleDelegate simpleDelegate = new SimpleDelegate(MyFunc);
+
+            // Invocation
+            simpleDelegate();
+        }
+    }
+
+
+OUTPUT:
+I was called by delegate.
+
+============================================
+delegate int NumberChanger(int n);
+
+class TestDelegate 
+{
+      static int num = 10;
+      
+      public static int AddNum(int p) 
+      {
+         num += p;
+         return num;
+      }
+
+      public static void Main()
+      {
+	 NumberChanger ncd = new NumberChanger(AddNum);
+	 int result = ncd(25);
+         Console.WriteLine(result);
+      }
+}
+
+OUTPUT:
+35
+

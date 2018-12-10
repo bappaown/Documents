@@ -1,0 +1,83 @@
+public interface IFileLogger
+{  
+    void LogError();  
+} 
+public interface IDatabaseLogger
+{  
+    void LogError();  
+} 
+
+public class CustomLogger: IFileLogger,IDatabaseLogger  
+{  
+    public void LogError()  
+    {  
+        Console.WriteLine("Explicit Interface Error!");  
+    }    
+}
+
+class MyClass
+{
+   public static void Main()
+   {
+   	CustomLogger customLogger = new CustomLogger();  
+   	IFileLogger fileLogger = new CustomLogger();  
+   	IDatabaseLogger databaseLogger = new CustomLogger();  
+  
+   	customLogger.LogError();  
+   	fileLogger.LogError();  
+   	databaseLogger.LogError();
+   }
+}
+
+OUTPUT:
+Explicit Interface Error!
+Explicit Interface Error!
+Explicit Interface Error!
+
+=======================================================
+public interface IFileLogger
+{  
+    void LogError();  
+} 
+public interface IDatabaseLogger
+{  
+    void LogError();  
+} 
+
+public class CustomLogger: IFileLogger,IDatabaseLogger  
+{  
+    public void LogError()  
+    {  
+        Console.WriteLine("Explicit Interface Error!");  
+    }  
+
+    void IFileLogger.LogError()
+    {  
+        Console.WriteLine("Log Error to File!");  
+    }
+
+    void IDatabaseLogger.LogError()
+    {  
+        Console.WriteLine("Log Error to Database!");  
+    }
+}  
+
+class MyClass
+{
+   public static void Main()
+   {
+   	CustomLogger customLogger = new CustomLogger();  
+   	IFileLogger fileLogger = new CustomLogger();  
+   	IDatabaseLogger databaseLogger = new CustomLogger();  
+  
+   	customLogger.LogError();  
+   	fileLogger.LogError();  
+   	databaseLogger.LogError();
+   }
+}
+
+OUTPUT:
+Explicit Interface Error!
+Log Error to File!
+Log Error to Database!
+
