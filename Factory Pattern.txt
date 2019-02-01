@@ -1,0 +1,138 @@
+
+class Program
+{
+    abstract class Position
+    {
+        public abstract string Title { get; }
+    }
+
+    class Manager : Position
+    {
+        public override string Title
+        {
+            get
+            {
+                return "Manager";
+            }
+        }
+    }
+
+    class Clerk : Position
+    {
+        public override string Title
+        {
+            get
+            {
+                return "Clerk";
+            }
+        }
+    }
+
+    class Programmer : Position
+    {
+        public override string Title
+        {
+            get
+            {
+                return "Programmer";
+            }
+        }
+    }
+
+    static class Factory
+    {
+        /// <summary>
+        /// Decides which class to instantiate.
+        /// </summary>
+        public static Position Get(int id)
+        {
+            switch (id)
+            {
+                case 0:
+                    return new Manager();
+                case 1:
+                    return new Clerk();
+                case 2:
+                    return new Programmer();
+		default:
+                    return new Clerk();
+            }
+        }
+    }
+
+    static void Main()
+    {
+        for (int i = 0; i <= 3; i++)
+        {
+            var position = Factory.Get(i);
+            Console.WriteLine("Where id = {0}, position = {1} ", i, position.Title);
+        }
+    }
+}
+
+OutPut:
+Where id = 0, position = Manager
+Where id = 1, position = Clerk
+Where id = 2, position = Programmer
+Where id = 3, position = Clerk
+
+------------------------------------------------------------------------
+interface IGet
+{
+    string ConC(int num);
+}
+
+class clsFirst : IGet
+{
+    public string ConC(int num)
+    {
+        string Final = "Position First: " + num;
+        return Final;
+    }
+}
+
+class clsSecond : IGet
+{
+    public string ConC(int num)
+    {
+        string Final = "Position Second: " + num;
+        return Final;
+    }
+} 
+
+static class clsFactory
+{
+    static public IGet CreateandReturnObj(int cChoice)
+    {
+        IGet ObjSelector = null;
+
+        switch (cChoice)
+        {
+            case 1:
+                ObjSelector = new clsFirst();
+                break;
+            case 2:
+                ObjSelector = new clsSecond();
+                break;
+            default:
+                ObjSelector = new clsFirst();
+                break;
+        }
+        return ObjSelector;
+    }
+}
+
+static void Main()
+{
+    IGet ObjIntrface = null;
+    for (int i = 0; i <= 3; i++)
+    {
+       ObjIntrface = clsFactory.CreateandReturnObj(i);
+       string res = ObjIntrface.ConC(i);
+    }
+}
+
+Output:
+Position First: 1
+Position Second: 2
+Position First: 1
