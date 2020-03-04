@@ -1,0 +1,57 @@
+[04/03, 11:28 AM] Atanu tipl: 1. What is the use of constructor?
+2.How many type of constructor in c#
+3. what is the use of Private constructor
+4. What is constructor operloading
+5. What is the pillars of oops
+[04/03, 11:28 AM] Atanu tipl: 6. Why c# does not support Multiple inheritance?
+7.Difference between interface and abstract class?
+[04/03, 11:28 AM] Atanu tipl: 8. why and where we should use interface or abstract class
+[04/03, 11:28 AM] Atanu tipl: 10. difference between sealed class & static class
+[04/03, 11:28 AM] Atanu tipl: 11. what is var/dynamic/Object - (object keyword)
+[04/03, 11:28 AM] Atanu tipl: 9. use of sealed class in c#
+[04/03, 11:28 AM] Atanu tipl: 12. readonly/ static/ const c#
+[04/03, 11:28 AM] Atanu tipl: 13. what SOLID principle?
+
+https://www.codeproject.com/Articles/703634/SOLID-architecture-principles-using-simple-Csharp#WhatisSOLID
+[04/03, 11:28 AM] Atanu tipl: 14. what is IOC/DP/DIP
+
+https://www.tutorialsteacher.com/ioc/introduction
+
+https://www.tutorialsteacher.com/ioc/dependency-inversion-principle
+
+https://www.c-sharpcorner.com/UploadFile/cda5ba/dependency-injection-di-and-inversion-of-control-ioc/
+
+
+https://dotnetfreakblog.wordpress.com/2014/05/11/dependency-injection-using-methods-in-c-part-3/
+[04/03, 11:28 AM] Atanu tipl: 15. what is Dependency injection and there type, why we should use and how
+[04/03, 11:28 AM] Atanu tipl: 16. what is extension methods.
+
+https://www.c-sharpcorner.com/uploadfile/puranindia/extension-methods-in-C-Sharp-3-0/
+[04/03, 11:28 AM] Atanu tipl: 18. what is optional parameter in c#
+[04/03, 11:28 AM] Atanu tipl: 19. can I white any constructor inside abstract class? if yes.. then what is the use of it, because we can't create any instance on abstract class.
+[04/03, 11:28 AM] Atanu tipl: 17. difference between ou/ ref
+[04/03, 11:28 AM] Atanu tipl: 2. difference Viewbag ,ViewData,  TempData
+[04/03, 11:28 AM] Atanu tipl: ------------------------MVC------------------------------
+[04/03, 11:28 AM] Atanu tipl: 1. What is MVC and difference between MVC and aspx
+[04/03, 11:28 AM] Atanu tipl: 20. Can I pass any parameter in static constructor?
+[04/03, 11:28 AM] Atanu tipl: 3. difference peek and keep in mvc
+[04/03, 11:28 AM] Atanu tipl: 4. what is XSS
+[04/03, 11:28 AM] Atanu tipl: how to prevent it
+[04/03, 11:28 AM] Atanu tipl: 7. what is @Html.AntiForgeryToken() in MVC
+[04/03, 11:28 AM] Atanu tipl: 6. Cross-Site Request Forgery (CSRF) in MVC
+[04/03, 11:28 AM] Atanu tipl: 5. difference between validateinput(false) and allowHtml
+[04/03, 11:29 AM] Atanu tipl: 9. Use of _ViewStart.cshtml
+[04/03, 11:29 AM] Atanu tipl: 10. use of _Layout.cshtml
+[04/03, 11:29 AM] Atanu tipl: 8. @html.partial vs html.renderpartial
+[04/03, 11:29 AM] Atanu tipl: 11. What is Routing
+[04/03, 11:29 AM] Atanu tipl: 13. what is "routes.IgnoreRoute("{resource}.axd/{*pathInfo}");"
+[04/03, 11:29 AM] Atanu tipl: 12. how to active Attribute routing. (Answer -  config.MapHttpAttributeRoutes(); in route config file)
+[04/03, 11:29 AM] Atanu tipl: 14. Life-cycle of MVC
+[04/03, 11:29 AM] Atanu tipl: 15. what is filter and type of filter
+[04/03, 11:29 AM] Atanu tipl: 16. difference between filter & attribute
+[04/03, 11:29 AM] Atanu tipl: 17. how to make custom filters in mvc
+[04/03, 11:29 AM] Atanu tipl: 19. How to pass data from controller to view and tell me some more process
+[04/03, 11:29 AM] Atanu tipl: 20. what is nonAction attribute and chieldAction only
+[04/03, 11:29 AM] Atanu tipl: 18. what is data Annotation
+[04/03, 11:29 AM] Atanu tipl: 22. what is generic
+[04/03, 11:29 AM] Atanu tipl: 21. difference between nonAction attribute and private method
